@@ -4,7 +4,8 @@ This is as open ended assignment, where you get to explore and play with some of
 
 The goal is to make a “thing” with data, while keeping in mind some of the socio-economic-political implications of designing a system that works with data. Whose data is it ? Who is designing it and for whom ?
 
-The Thing
+The Thing    
+
 The project can have one of many forms.
 
 It can be about data visualization, exploration and/or organization. Maybe there’s a dataset, or type of data, that you’re interested in exploring in depth. We can use some of the modeling techniques we saw to find patterns and create different narratives around huge collections of images or sounds, for example. This could involve the design and implementation of a simple dashboard or navigation interface, or just the backend for such an imaginary system.
