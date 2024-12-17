@@ -38,12 +38,15 @@ We can see that feature maps closer to the model's input capture fine details of
 
 ### 3. Amplifying features of different layers on a blank image
 
+Since the large pre-trained models offer much more interesting features, I stuck with using pre-trained models rather than training models myself (for now). Instead of visualizing the learned features of a NN layer in response to an input image, here I tried to amplify certain features in the image by modifying an input image (i.e. using Deep Dream). I wanted the algorithm not be influenced by any existing features in the input image, so I used a completely black and completely white image as the input. Since there are no discernible features in a black or white image, the model should amplify (random) activations in its layers to hopefully reflect the learned features of the model. Basically I was hoping to visualize the types of patterns the model has been trained to recognize or favor, independent of any external input. 
+
+Below are the collated outputs of implementing Deep Dream using specific layers (5, 12, 19, 28, 34, 35) of the VGG19 model, going from left to right, up and down. 
+
+Using a completely black input image:
 ![Intro to ML Final Project-02](https://github.com/user-attachments/assets/379d1577-8705-4b93-abc7-0a53344a8d67)
 
-Trying the same with a completely blank white input image:
+Using a completely white input image:
 ![Intro to ML Final Project-03](https://github.com/user-attachments/assets/eff5347c-d330-4ffc-b752-14743927ed3f)
 
-
-
-## Learnings
+You can see that the learned features of deeper layers are increasingly more intricate and abstract compared to the shallower layers. The last 2 images (layer 34 and 35) is a comparison between what a ReLU activation (layer 35) does to a Conv2d layer (layer 34). The ReLU layer sort of highlights (or activates) specific parts of the images. 
 
