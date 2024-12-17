@@ -50,3 +50,8 @@ Using a completely white input image:
 
 You can see that the learned features of deeper layers are increasingly more intricate and abstract compared to the shallower layers. The last 2 images (layer 34 and 35) is a comparison between what a ReLU activation (layer 35) does to a Conv2d layer (layer 34). The ReLU layer sort of highlights (or activates) specific parts of the images. 
 
+## Learnings
+- **Training Progression**: Feature maps evolve during training epochs, becoming more refined as the model optimizes its weights.
+- **Layer Behavior**: Shallow layers tend to focus on fine-grained, more edge-like details, while deeper layers capture more abstract, high-level representations.
+- **Large Pre-trained Models**: Pre-trained models, such as VGG or Resnet, offer much more intricate and differentiated feature maps and are hence better suited to derive insights from compared to small custom networks.
+
